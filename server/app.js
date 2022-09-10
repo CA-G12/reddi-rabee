@@ -18,11 +18,11 @@ app.use(express.static(join(__dirname, '..', 'public')));
 app.use(router);
 
 app.use((req, res)=>{
-  res.sendStatus(404);
+  res.status(404).redirect('/errors/404');
 });
 
 app.use((err, req, res)=>{
-  res.sendStatus(500);
+  res.status(500).redirect('/errors/500');
 });
 
 module.exports = app;
