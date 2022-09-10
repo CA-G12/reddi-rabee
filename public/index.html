@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home/style.css">
+    <script src="./home/script.js" defer></script>
+    <script src="./home/dom.js" defer></script>
+    <title>Reddit - Dive into anything</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <a class="main-page-link" href="/">
+                <img src="./assets/reddit_logo.png" alt="reddit-logo"/></a>
+            <div id="searchBox" class="search-box">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="search icon">
+                <input id="searchInput" class="search-input" type="search" placeholder="Search Reddit">
+            </div>
+            <div class="control-box">
+                <button id="btnLogIn" class="button-log-in" type="button">Log In</button>
+                <button id="btnSignUp" class="button-sign-up" type="button">Sign Up</button>
+            </div>
+            <div class="dropdown-menu">
+                <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/000000/external-user-user-tanah-basah-basic-outline-tanah-basah-7.png" alt="user icon">
+                <img src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-arrow-arrows-those-icons-lineal-color-those-icons-1.png" alt="drop down icon">
+            </div>
+        </div>
+    </header>   
+    <main>
+        <div id="authForm" class="auth-popup"> 
+        <!--     <div class="auth-container">
+                <div>
+                    <img src="https://www.redditstatic.com/accountmanager/bbb584033aa89e39bad69436c504c9bd.png" alt="img">
+                    <div class="sign-up-form">
+                        <h4>Sign up</h4>
+                        <p>By continuing, you are setting up a Reddit account and agree to our <a href="">User Agreement</a>  and <a href="">Privacy Policy</a>.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <div id="btnGoogleAuth" class="btn-o-auth">
+                            <img class="o-auth-icon" src="https://img.icons8.com/color/48/000000/google-logo.png" alt="google icon"/>
+                            <button type="submit">Continue with google</button>
+                        </div>
+                        <div id="btnAppleAuth" class="btn-o-auth">
+                            <img class="o-auth-icon" src="https://img.icons8.com/ios-glyphs/30/000000/mac-os.png" alt="apple icon"/>
+                            <button type="submit">Continue with apple</button>
+                        </div>
+                        <div class="divider-container">
+                            <div class="divider-line"></div>
+                            <h5>OR</h5>
+                            <div class="divider-line"></div>
+                        </div>
+                        <input id="signUpUserEmail" name="signUpUserEmail" class="user-email" type="email" placeholder="EMAIl" required/>
+                        <br>
+                        <button id="btnNextStep" type="submit" class="button-sign-up">Continue</button>
+                        <p>Already a redditor? <a href="">LOG IN</a></p>
+                    </div>
+                </div>
+                <button id="btnCloseForm" class="close-form" type="button">&times;</button>
+            </div>
+            <div id="logInForm" class="log-in-form">
+            </div> -->
+        </div>
+    <div class="main-div">
+        <section>
+            <h3>Trending now</h3>
+            <div id="trendingNow" class="trending-now">
+            
+            </div>
+        </section>
+        <section class="feed-section">
+            <h3>Popular posts</h3>
+            <div id="postsContainer" class="posts-container">
+                <div class="post">
+                    <div id="upDownVote" class="up-down-vote">
+                        <img src="./assets/icons8_up_vote_32.png" alt="up vote">
+                        <p class="total-votes">17 k</p>
+                        <img src="./assets/icons8_down_vote_32.png" alt="down vote">
+                    </div>
+                    <div class="post-body">
+                        <div class="post-header">
+                            <div>
+                                <img class="user-image" src="./assets/favicon.png" alt="user image">
+                                <a href="" class="community-name">r/OnePiece</a>
+                                <p class="post-meta"> . posted by <a href="" class="user-name">u/user</a> 00 hours ago</p>    
+                            </div>
+                             <button type="submit" class="join-community">Join</button>
+                        </div>
+                        <div class="post-content">
+                            <h4>This is really happening !!!</h4>
+                            <p>Hello Reddit!!!</p>
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-footer-button">
+                                <img class="post-footer-img" src="./assets/icons8_comments_16.png" alt="Comments logo">
+                                <p class="post-footer-title">Comments</p>
+                            </div>
+                            <div class="post-footer-button">
+                                <img class="post-footer-img" src="./assets/icons8_share_16.png" alt="Share logo">
+                                <p class="post-footer-title">Share</p>
+                            </div>
+                            <div class="post-footer-button">
+                                <img class="post-footer-img" src="./assets/icons8_save_16.png" alt="Save logo">
+                                <p class="post-footer-title">Save</p>
+                            </div>
+                            <div class="post-footer-button">
+                                <img id="menuButton" class="post-footer-img" src="./assets/icons8_menu_16.png" alt="more options dots">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
