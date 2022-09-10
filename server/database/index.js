@@ -1,4 +1,5 @@
 const userQueries = require('./queries/user');
+const postQueries = require('./queries/post');
 
 
-module.exports = {userQueries};
+module.exports = {userQueries, postQueries};
